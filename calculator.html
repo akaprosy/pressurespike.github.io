@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Pressure Spike</title>
+
+    <meta name="viewport" content="width-device-width", initial-scale="1" />
+
+    <meta name="author" content="Alex F. Kaprosy" />
+
+    <link href="default.css" rel="stylesheet">
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <header>
+
+
+        <img src="images/PressureSpike2.svg" alt="Pressure Spike" id="pressurespike" />
+
+       
+    
+
+
+    
+<nav>
+    
+<ul>
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="calculator.html">Calculator</a></li>
+
+   
+
+    <li><a href="contaminationcontrol.html">Contamination Control</a></li>
+
+    <li><a href="Blog.html">Blog</a></li>
+</ul>
+    
+</nav>
+
+    <script src="script.js"></script>
+</header>
+
+    <main id="calcwidth">
+
+
+        <h2>Hydraulic Calculator</h2>
+        <h3><b>Pascals Law(F = P x A) -</b><i> Pressure applied on a confined fluid is applied equally, in all directions, with equal force on all equal areas</i></h3>
+        <!--Calculate force-->
+        <form name="formcalc2" id="formcalc2">
+            Pressure(psi)  <input type="text" name="txtpress" placeholder="Enter a number" class="textbox">
+            Area(in<sup>2</sup>)  <input type="text" name="txtarea" placeholder="Enter a number" class="textbox">
+            Force(lbs) =  <input type="text" name="txtforce" placeholder=" " class="textbox">
+            <input type="button" value="Calculate" click="force()" placeholder="" class="button2" >
+
+        </form>
+        <br>
+        <!-- Calculate pressure-->
+        <form name="formcalc3" id="formcalc3">
+            Force(lbs)  <input type="text" name="txtforce" placeholder="Enter a number" class="textbox">
+            Area(in<sup>2</sup>)  <input type="text" name="txtarea" placeholder="Enter a number" class="textbox">
+            Pressure(psi) = <input type="text" name="txtpress" placeholder=" " class="textbox">
+            <input type="button" value="Calculate" click="pressure()" placeholder="" class="button2" >
+        </form>
+        <br>
+        <!-- Calculate force-->
+        <form name="formcalc4" id="formcalc4">
+            Force(lbs) <input type="text" name="txtforce" placeholder="Enter a number" class="textbox">
+            Pressure(psi) <input type="text" name="txtpress" placeholder="Enter a number" class="textbox">
+            Area(in<sup>2</sup>) = <input type="text" name="txtarea" placeholder=" " class="textbox">
+            <input type="button" value="Calculate" click="area()" placeholder=" " class="button2" >
+        </form>
+        <br>
+        <!--Calculate area of a cylinder-->
+        <h3>Calculate area of a cylinder(Area = diameter<sup>2</sup> x .7854)</h3>
+        <form name="formcalc5" id="formcalc5">
+            Diameter(inches) <input type="text" name="txtdia" placeholder="Enter a number" class="textbox">
+            Area(in<sup>2</sup>) = <input type="text" name="txtarea" placeholder=" " class="textbox">
+            <input type="button" value="Calculate" click="areacyl()" placeholder=" " class="button2" >
+        </form>
+        <br />
+        <h3>Calculate annular area of a cylinder(Bore - Rod Area)</h3>
+        <form name="formcalc8" id="formcalc8">
+            Bore Diameter(inches): <input type="text" name="txtboredia" placeholder="Enter a number" class="textbox">
+            Rod diameter(inches): <input type="text" name="txtroddia" placeholder="Enter a number" class="textbox">
+            Annular Area(in<sup>2</sup>) = <input type="text" name="txtannarea" placeholder=" " class="textbox">
+            <input type="button" value="Calculate" click="annareacyl()" class="button2" placeholder=" ">
+        </form>
+        <br>
+        <hr>
+
+
+
+        <h2>Cylinder Velocity formulas</h2>
+
+
+
+        <!--Find velocity given stroke and time-->
+
+        <h3>Find velocity for a cylinder(Velocity<sub>in/min</sub> = Stroke<sub>in</sub> x (60<sub>sec/min</sub> / Time<sub>sec</sub>)</h3>
+
+        <form name="formcalc6" id="formcalc6">
+
+            Stroke(inches): <input type="text" name="txtstroke" class="textbox" placeholder="Enter a number" >
+
+            Time(inches): <input type="text" name="txttime" class="textbox" placeholder="Enter a number">
+
+            Velocity(in/min) = <input type="text" name="txtvelocity" class="textbox" placeholder=" ">
+
+            <input type="button" value="Calculate" click="velocityone()" class="button2" placeholder=" ">
+
+        </form>
+
+
+
+        <!--Find velocity given flow and area-->
+
+        <h3>Find cylinder velocity(Velocity<sub>in/min</sub> = (Flow<sub>gpm</sub> x 231) / Area<sub>in<sup>2</sup></sub>)</h3>
+
+        <form name="formcalc7" id="formcalc7">
+
+            Flow(gpm): <input type="text" name="txtflow" class="textbox" placeholder="Enter a number">
+
+            Area(in<sup>2</sup>): <input type="text" name="txtarea" class="textbox" placeholder="Enter a number">
+
+            Velocity(in/min) = <input type="text" name="txtvelocity" class="textbox" placeholder=" ">
+
+            <input type="button" value="Calculate" click="velocitytwo()" class="button2" placeholder=" ">
+
+        </form>
+
+        <br />
+
+        <!--Flow requirement, cylinder extending-->
+
+        <h3>Find flow requirement for cylinder extending(Flow<sub>gpm</sub> = (Velocity<sub>in/min</sub> * Area<sub>in<sup>2</sup></sub>)/231)</h3>
+
+        <form name="formcalc9" id="formcalc9">
+
+            velocity(in/min): <input type="text"  name="txtvelocity" class="textbox" placeholder="Enter a number" />
+
+            Bore Diameter(inches): <input type="text" name="txtbore" class="textbox" placeholder="Enter a number"/>
+
+            Flow Requirement(gpm)= <input type="text" name="txtflow" class="textbox" placeholder=" "/>
+
+            <input type="button" value="Calculate" click="flowreqext()" class="button2" placeholder=" ">
+
+        </form>
+
+        <br />
+
+        <!--Flow requirement, cylinder retracting-->
+
+        <h3>Find flow requirement for cylinder retracting(Flow<sub>gpm</sub> = (Velocity<sub>in/min</sub> * Area<sub>in<sup>2</sup></sub>)/231)</h3>
+
+        <form name="formcalc10" id="formcalc10">
+
+            Velocity(in/min): <input type="text" name="txtvelocity" class="textbox" placeholder="Enter a number"/>
+
+            Diameter(inches): <input type="text" name="txtbore" class="textbox" placeholder="Enter a number"/>
+            
+            Rod Diameter(inches): <input type="text" name="txtroddia" class="textbox" placeholder="Enter a number"/>
+
+            Flow Requirement(gpm)= <input type="text" name="txtflow" class="textbox" placeholder=" "/>
+
+            <input type="button" value="Calculate" click="flowreqret()" class="button2" placeholder=" ">
+
+        </form>
+        <hr>
+
+        <h2>Pump formulas</h2>
+        <h3>Calculate Horse Power</h3>
+        <h3>Horsepower = (Pressure x flow)/1714</h3>
+
+        <form name="formcalc11" id="formcalc11">
+            Pressure(psi): <input type="text" name="txtpress" placeholder="Enter a number" class="textbox">
+            Flow(gpm): <input type="text" name="txtflow" placeholder="Enter a number" class="textbox">
+            Horsepower = <input type="text" name="txthp" class="textbox"  placeholder=" " >
+            <input type="button" value="Calculate" click="horsepower()" class="button2">
+
+        </form>
+        <h3>Calculate pump flow given displacement and rpm</h3>
+        <h3>Flow = Displacement<sub>cir</sub> * rpm</h3>
+
+        <form name="formcalc15" id="formcalc15">
+            Displacement(cir) : <input type="text" name="txtdisplacement" placeholder="Enter a number" class="textbox">
+            Rpm: <input type="text" name="txtrpm" placeholder="Enter a number" class="textbox">
+            Pump Flow(gpm)= <input type="text" name="txtflow" class="textbox">
+            <input type="button" value="Calculate" click="pumpflow()" class="button2" >
+
+        </form>
+        <h2>Motor Torque Formulas</h2>
+        <h2>Calculate horsepower given torque and rpm</h2>
+
+        <h3>HP = (Torque<sub>lbs-ft</sub> *  rpm)/5252</h3>
+
+        <form name="formcalc12" id="formcalc12">
+            Torque(lbs-ft): <input type="text" name="txttorque" placeholder="Enter a number" class="textbox">
+            RPM: <input type="text" name="txtrpm" placeholder="Enter a number" class="textbox">
+            Horsepower = <input type="text" name="txthp" placeholder="" class="textbox">
+            <input type="button" value="Calculate" click="motorhp1()" class="button2" >
+
+        </form>
+        <h3>HP = (Torque<sub>lbs-in</sub> * rpm)/63025</h3>
+
+        <form name="formcalc13" id="formcalc13">
+            Torque(lbs-ft): <input type="text" name="txttorque" placeholder="Enter a number" class="textbox">
+            RPM: <input type="text" name="txtrpm" placeholder="Enter a number" class="textbox">
+            Horsepower = <input type="text" name="txthp" placeholder="" class="textbox">
+            <input type="button" value="Calculate" click="motorhp2()" class="button2">
+
+        </form>
+        <h2>Calculate Motor Torque given displacement and pressure</h2>
+        <h3>Torque<sub>lbs-in</sub>=(Displacement<sub>cir</sub> * Pressure)/6.28</h3>
+
+        <form name="formcalc14" id="formcalc14">
+            Enter Displacement(cir): <input type="text" name="txtdisplacement" placeholder="Enter a number" class="textbox">
+            Enter Pressure(psi): <input type="text" name="txtpressure" placeholder="Enter a number" class="textbox">
+            Torque(lbs-in) = <input type="text" name="txttorque" placeholder="" class="textbox">
+            <input type="button" value="Calculate" click="motortorque()" class="button2" >
+
+        </form>
+        <hr>
+        <!--Fluid dynamics section-->
+        <h2>Inlet Conditions</h2>
+        <h3>Head(Inlet pressure<sub>psig</sub> = Specific Gravity x .433<sub>psi/ft</sub>H<sub>2</sub>O)</h3>
+        <p>Understanding factors that affect fluid weight is critical for ensuring adequete pump inlet conditions.</p>
+        <!--User inputs positive head and specific gravity in text field. Result is displayed in Gauge Pressure Generated from Positive Head text box-->
+        <h3>Calculate Pressure Generated from Positive Head</h3>
+        <form name="formcalc" id="formcalc">
+            Positive Head(ft): <input type="text" name="txtposhead" placeholder="Enter a number" class="textbox">
+            Specific Gravity: <input type="text" name="txtspecgrav" placeholder="Enter a number" class="textbox">
+            Gauge pressure generated from Positive head(psi):<input type="text" name="txtres" placeholder="" class="textbox">
+
+            <input type="button" value="Calculate" click="inletpressure()" class="button2">
+            
+        </form>
+        <hr>
+
+
+
+
+
+
+
+    </main>
+
+  
+
+
+    
+
+<footer>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    
+        <li><a href="contact.html">Contact Us</a></li>
+    
+        <li><a href="links.html">Industry Links</a></li>
+    
+        <li><a href="Blog.html">Blog</a></li>
+    
+        
+    </ul>
+    <p>The information and formulas contained in this application was obtained from various public and private industry resources. While every effort was made to ensure the accuracy of the information contained in this application, it is the responsibility of the user to independantly verify the calculations. The author recommends that the user verifies any information obtained from this site using credible fluid power publications and resources.The author disclaims any responsibility for consequental damages including property damage, warranties, personal injury and death resulting from the information obtained from this application.</p>
+</footer>
+</body>
+
+
+
+</html>

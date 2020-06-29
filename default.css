@@ -1,0 +1,484 @@
+
+body {
+
+    overflow-y: scroll;
+ 
+
+    
+   
+    background-color: rgb(250, 250, 250);
+
+    font-family: Trebuchet MS;
+
+}
+
+
+
+
+
+header  {
+       
+       background-color: rgb(18, 18, 53);
+       /*background: linear-gradient(90deg, rgb(3, 3, 58), rgb(5, 5, 56));*/
+        margin-bottom: 100px;
+        
+        
+}
+
+
+
+
+ ul li a {
+    font-family: Trebuchet MS;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+    
+      
+    }
+
+
+
+h1 {
+
+    color: rgb(230,230,230);
+    align-self: center;
+    font-family: Trebuchet MS;
+    margin-left: 5px;
+    font-size: 45px;
+  
+
+}
+h2 {
+    font-size: 30px;
+}
+
+
+
+.pressurespike {
+
+   
+
+    top: 3rem;
+
+    left: 5%;
+
+}
+
+#pressurespike {
+      width: 100%;
+      box-shadow: 4px 4px 4px rgb(49, 49, 49);
+   
+}
+
+
+
+main {
+
+    color: rgb(50,50,50);
+
+    margin-left: 30px;
+
+    padding-bottom: 30px;
+
+    padding-top: 30px;
+
+    background-attachment: fixed;
+
+    position: relative;
+
+    
+
+}
+
+
+
+footer {
+
+    /*background-color: rgb(60,60,60);    */
+    background-color: rgb(18, 18, 53);
+    border-top: 2px solid rgb(120,120,120);
+    
+    font-family: Trebuchet MS;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+   /* margin-bottom: -100px; */
+    
+    
+
+}
+#cylinderresponse {
+    max-width: 100%;
+}
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 14px;
+    padding-bottom: 60px;
+}
+
+/*Calculator.html style sheet-Begin*/
+#formcalc {
+
+    display: flex;
+    font-size: 18px;
+
+}
+
+
+
+#formcalc2 {
+
+    display: flex;
+    font-size: 18px;
+
+}
+
+
+
+#formcalc3 {
+
+    display:flex;
+    font-size: 18px;
+}
+
+
+
+#formcalc4 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+#formcalc5 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+#formcalc6 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+#formcalc7 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc8 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc9 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc10 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc11 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc12 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc13 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+#formcalc14 {
+
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+.button2 {
+
+    /*background-color: rgb(53, 51, 51);*/
+    background-color: rgb(18, 18, 53);
+    border: none;
+
+    color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.textbox {
+    border: none;
+    background-color: rgb(194, 194, 253);
+    border-radius: 4px;
+    width: 125px;
+    font-size: 18px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+/*Calculator-responsive-begin*/
+@media screen and (max-width: 960px) {
+#formcalc {
+
+    display: flex;
+    font-size: 12px;
+
+}
+
+
+
+#formcalc2 {
+
+    display: flex;
+    font-size: 12px;
+
+}
+
+
+
+#formcalc3 {
+
+    display:flex;
+    font-size: 12px;
+}
+
+
+
+#formcalc4 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+
+
+#formcalc5 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+
+
+#formcalc6 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+
+
+#formcalc7 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc8 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc9 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc10 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc11 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc12 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc13 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+#formcalc14 {
+
+    display: flex;
+    font-size: 12px;
+}
+
+
+
+
+
+.button1 {
+
+    background-color: rgb(100,100,100);
+
+    border: none;
+
+    color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.button2 {
+    background-color: rgb(18, 18, 53);
+    /*background-color: rgb(100,100,100);*/
+
+    border: none;
+
+    color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.textbox {
+    border-radius: 4px;
+    width: 50%;
+    height: 50%;
+    font-size: 12px;
+}
+
+}
+/*Calculator-repsonsive-end*/
+
+
+
+
+
+
+
+/*Calculator Stylesheet-end*/
+
+@media screen and (min-width: 800px) {
+    header ul  {
+          
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 300px;
+        padding-bottom: 40px;
+        margin-top: -150px;
+        flex-wrap: wrap;  
+        flex-shrink: 3;
+    }
+        }
+
+@media screen and (min-width: 700px) {
+    #pressurespike {
+        margin: 40px 0px 40px 60px;
+        width: 288px;
+        height: auto;
+    }
+}
+/*ISO Contaminent Code page*/
+#table {
+    font-size: 24px;
+}
+.ccparagraph {
+    margin: 1em;
+}
+
+/*Contaminationcontrol.html*/
+#ccnote {
+    background-color: rgb(194, 194, 253);
+    display: float;
+    float:right;
+    width: 200px;
+    margin: 1em;
+    padding: 1em;
+    
+}
+
+#isonote {
+    background-color: rgb(194, 194, 253);
+    display: float;
+    float:right;
+    width: 200px;
+    margin: 5em;
+    padding: 1em;
+}
+/*#isoh2 {
+   
+    margin-left: 1em;
+}*/
+.isoselectcss {
+   margin-left:3em;
+}
+
