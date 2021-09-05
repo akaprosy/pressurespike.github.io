@@ -68,7 +68,7 @@
        <h2 id="isoh2">ISO Solid Contamination Code Generator</h2>
        <p>The ISO 4406 target cleanliness level is usually determined by the most sensitive components in the system at specified pressures and operating enviroments. Particle sizes 4&#181 and 6&#181 are known as silt generating particles which clog small orfices and build up around valve spools and bores causing them to stick. Particles 16&#181 and above are known as wear particles and cause premature wear by abrasion leading to component failure.   </p>
        <h3>Particles > 4&#181 per ml</h3>
-           <select id="particlecount4" onclick="getParticleCount4()">
+           <select id="particlecount4" onchange="getParticleCount4()">
             
                 <option value="  ">--Select particles per ml</option>
                <option value="24">80,000 - 160,000</option>
@@ -102,7 +102,7 @@
            <!--6 micron per ml-->
            
            <h3>Particles > 6&#181 per ml</h3>
-           <select id="particlecount6" onclick="getParticleCount6()">
+           <select id="particlecount6" onchange="getParticleCount6()">
                 <option value=" ">--Select particles per ml</option>
                <option value="24">80,000 - 160,000</option>
                <option value="23">40,000 - 80,000</option>
@@ -135,7 +135,7 @@
            <!--14 micron-->
          
            <h3>Particles > 14&#181 per ml</h3>
-           <select id="particlecount14" onclick="getParticleCount14()">
+           <select id="particlecount14" onchange="getParticleCount14()">
                 <option value=" ">--Select particles per ml</option>
                <option value="24">80,000 - 160,000</option>
                <option value="23">40,000 - 80,000</option>
