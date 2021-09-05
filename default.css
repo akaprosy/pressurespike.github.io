@@ -395,7 +395,7 @@ footer p {
 
     color: white;
 
-    border-radius: 15px;
+    border-radius: 5px;
 
     text-align: center;
 
@@ -404,7 +404,7 @@ footer p {
     display: inline-block;
 
     cursor: pointer;
-    font-size: 12px;
+    font-size: 11px;
 
 }
 
