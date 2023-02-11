@@ -99,7 +99,7 @@ footer {
     /*background-color: rgb(60,60,60);    */
     background-color: rgb(18, 18, 53);
     border-top: 2px solid rgb(120,120,120);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     /*margin:0;*/
     font-family: Trebuchet MS;
