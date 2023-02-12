@@ -2,7 +2,7 @@
 body {
 
     overflow-y: scroll;
-    /*margin: 0;*/
+    margin: 0;
 
     
    
@@ -86,7 +86,7 @@ main {
 
     background-attachment: fixed;
 
-    /*position: relative;*/
+    position: relative;
 
     
 
@@ -100,13 +100,12 @@ footer {
     background-color: rgb(18, 18, 53);
     border-top: 2px solid rgb(120,120,120);
     position: absolute;
-    /*bottom: 0;*/
     margin:0;
     font-family: Trebuchet MS;
     color: white;
     font-size: 16px;
     text-decoration: none;
-    /*margin-bottom: -100px; */
+   /* margin-bottom: -100px; */
     
     
 
