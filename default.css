@@ -81,7 +81,7 @@ main {
     margin-left: 30px;
 
     /*padding-bottom: 30px;*/
-    padding-bottom: 2.5em;
+    padding-bottom: 180px;
 
     padding-top: 30px;
 
@@ -102,6 +102,7 @@ footer {
     border-top: 2px solid rgb(120,120,120);
     position: absolute;
     margin:0;
+    margin-top: 180px;   /*test*/
     font-family: Trebuchet MS;
     color: white;
     font-size: 16px;
