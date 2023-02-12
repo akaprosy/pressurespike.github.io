@@ -102,7 +102,7 @@ footer {
     border-top: 2px solid rgb(120,120,120);
     position: absolute;
     margin:0;
-    margin-top: 180px;   /*test*/
+    margin-top: -180px;   /*test*/
     font-family: Trebuchet MS;
     color: white;
     font-size: 16px;
